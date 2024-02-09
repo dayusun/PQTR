@@ -12,9 +12,11 @@ The functions and scripts require Tensor Toolbox for MATLAB (>=v3.6).
 
 `pqtr` is the main function of PQTR. Please use `help pqtr` for more detials of usage.
 `pqtr` fits the quantile regression model
+
 $$
     Y(\tau)  = \alpha(\tau)+\beta(\tau)^{T}Z+<\mathcal{B}(\tau),\mathcal{X}>
 $$
+
 with PLS-type algorithm.
 Here, $Y$ is the response, $Z$ is the low-dimensional vector predictor, $\mathcal{X}$ is the tensor predictor and $\tau$ is the quantile of $Y$ to be fitted.
 The PLS-type algorithm requires the dimension of reduced tensor predictor.
