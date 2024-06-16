@@ -46,6 +46,104 @@ When the dimension `d` is not provided, the algorithm-selected dimesnion would b
         X = tensor(normrnd[0,1,[100,16,16,16]]);
         [alpha, gamma, B_tau, u] = pqtr(X, Y, Z, tau);
 
+## Simulation settings for the shape of coefficients
+
+### scenario (`scena`) = 1 
+
+Scenario 1 contains the low rank shapes for homogenous coefficient setting.
+
+#### source (`src`) = 1
+
+The tri-square shape for the homogeneous coefficient across different quantiles.
+
+![alt text](img/tri-sq.png)
+
+#### source (`src`) = 2
+The cross shape for the homogeneous coefficient across different quantiles.
+
+![alt text](img/cross.png)
+
+#### source (`src`) = 3
+The bi-square shape with  for the homogeneous coefficient across different quantiles.
+
+![alt text](img/bi-sq.png)
+
+### scenario (`scena`) = 2 
+
+Scenario 2 contains the higher rank shapes for homogenous coefficient setting.
+
+
+#### source (`src`) = 2
+The bi-circle shape for the homogeneous coefficient across different quantiles.
+
+ ![alt text](img/bi-circ.png)
+
+#### source (`src`) = 3
+The frame shape for the homogeneous coefficient across different quantiles.
+
+![alt text](img/frame.png)
+
+### scenario (`scena`) = 3
+
+Scenario 3 contains the shapes for heterogenous case.
+
+
+#### source (`src`) = 1
+
+The bi-square shape for the heteroeneous coefficient across different quantiles. The same with `scena` = 1 and `src` = 3.
+
+
+
+#### source (`src`) = 2
+The uni-square shape for the heteroeneous coefficient with the same rank 1 across different quantiles.
+
+![alt text](img/unisq-sr.png)
+
+#### source (`src`) = 3
+The tri-square shape for the heteroeneous coefficient with different ranks across different quantiles.
+
+![alt text](img/trisq-dr.png)
+
+
+#### source (`src`) = 4
+The tri-square shape with negative values for the heteroeneous coefficient with different ranks across different quantiles. The shapes are the same as `src` = 3.
+
+
+
+### scenario (`scena`) = 5 
+
+Scenario 3 contains the shapes for the 3D case.
+
+#### source (`src`) = 1
+The same 3D tensor shape with negative values for the heteroeneous coefficient with the same rank across different quantiles.
+
+## Other simulation settings
+
+
+### Covariance matrix model
+
+Set `varcase` to change the covariance matrix model.
+
+* 1 = envelop model
+* 2 = compound symmetric 
+
+### Quantle regression setting
+
+Set `casenum` to change the covariance matrix model.
+
+* 1 = homogeneous case
+* 7 = heterogeneous case with the same rank for different qauntiles
+* 8 = heterogeneous case with different ranks for different qauntiles
+
+### Distribution setting
+
+Set `errdist` to change the distribution setting of Y given the predictors.
+
+* `t` : Student's t distribution
+* `chi`: Chi-sq distribution
+* `normal`: normal distribution
+
+
 ## Reference
 
 * Brett W. Bader, Tamara G. Kolda and others, Tensor Toolbox for MATLAB, Version 3.6, [www.tensortoolbox.org](www.tensortoolbox.org) 
