@@ -129,7 +129,7 @@ Set `varcase` to change the covariance matrix model.
 
 ### Quantle regression setting
 
-Set `casenum` to change the covariance matrix model.
+Set `casenum` to change the quantile regression coefficient settings.
 
 * 1 = homogeneous case
 * 7 = heterogeneous case with the same rank for different qauntiles
@@ -137,7 +137,7 @@ Set `casenum` to change the covariance matrix model.
 
 ### Distribution setting
 
-Set `errdist` to change the distribution setting of Y given the predictors.
+Set `errdist` to change the distribution of Y given the predictors.
 
 * `t` : Student's t distribution
 * `chi`: Chi-sq distribution
