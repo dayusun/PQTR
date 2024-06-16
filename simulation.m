@@ -56,18 +56,13 @@ B0 = zeros(p);
 B01 = zeros(p);
 B02 = zeros(p);
 B03 = zeros(p);
-% Scenario I, source 1, tri sqaure
+% Scenario I, source 1, tri square
 if (scena == 1) && (src == 1)
     B0 = zeros(p);
     B0(33:48, 3:18) = 1;
     B0(15:30, 21:36) = 1;
     B0(2:10, 40:48) = 1;
 
-
-    B0 = zeros(p);
-    B0(33:48, 3:18) = 1;
-    B0(15:30, 21:36) = 1;
-    B0(3:12, 39:48) = 1;
 end
 
 % Scenario I, source 2, cross
@@ -80,25 +75,12 @@ if (scena == 1) && (src == 2)
 end
 
 
-% Scenario I, source 3, bi-sqaure
+% Scenario I, source 3, bi-square
 
 if (scena == 1) && (src == 3)
     B0 = zeros(p);
     B0(6:19, 12:25) = 1;
     B0((50 - 25):(50 - 12), (50 - 19):(50 - 6)) = 1;
-end
-
-
-% Scenario II, source 1, large traianle
-if (scena == 2) && (src == 1)
-    B0 = zeros(p);
-    for ii = 5:26
-        for jj = (45 - 25 + ii):(45)
-            B0(jj, ii) = 1;
-        end
-    end
-
-
 end
 
 
@@ -132,7 +114,7 @@ if (scena == 2) && (src == 3)
 end
 
 
-% Scenario III, source 1, bi sqaure
+% Scenario III, source 1, bi square
 % Same rank 2
 if (scena == 3) && (src == 1)
 
@@ -148,7 +130,7 @@ if (scena == 3) && (src == 1)
 end
 
 if (scena == 3) && (src == 2)
-    % Same rank different shapes , sqaure
+    % Same rank different shapes , square
     B01 = zeros(p);
     B02 = zeros(p);
     B03 = zeros(p);
