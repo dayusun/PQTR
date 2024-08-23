@@ -6,8 +6,8 @@
 % The inercept
 alpha = 0.5;
 % The low-dimensional predictor coefficient and dimension
-gamma0 = [-1, 1]';
-gamma = gamma0;
+gamma = [-1, 1]';
+% gamma = gamma0;
 p_Z = 2;
 % The size of tensor covariate X
 p = [50, 50];
