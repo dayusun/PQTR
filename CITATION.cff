@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+type: software
+title: "PQTR: Partial Quantile Tensor Regression"
+abstract: "MATLAB implementation of partial quantile tensor regression, a partial-least-squares-type algorithm for quantile regression with tensor-valued predictors."
+authors:
+  - family-names: Sun
+    given-names: Dayu
+    orcid: "https://orcid.org/0000-0002-7149-3303"
+    affiliation: Indiana University School of Medicine
+repository-code: "https://github.com/dayusun/PQTR"
+url: "https://www.sundayu.me/"
+preferred-citation:
+  type: article
+  title: Partial Quantile Tensor Regression
+  authors:
+    - family-names: Sun
+      given-names: Dayu
+      orcid: "https://orcid.org/0000-0002-7149-3303"
+    - family-names: Qiu
+      given-names: Zhiping
+    - family-names: Peng
+      given-names: Limin
+    - family-names: Guo
+      given-names: Ying
+    - family-names: Manatunga
+      given-names: Amita
+  journal: Journal of the American Statistical Association
+  year: 2024
+  volume: 120
+  issue: 551
+  start: 1724
+  end: 1735
+  doi: 10.1080/01621459.2024.2422129
